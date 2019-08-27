@@ -1,0 +1,30 @@
+<h1>
+  ng-if
+</h1>
+<input type="checkbox" [(ngModel)]="showNome">Nome
+<input type="checkbox" [(ngModel)]="showNomeCompleto">Sobrenome
+<p *ngIf="showNome && showNomeCompleto">
+  <label for="nome">Nome: </label>
+  <input id="nome" type="text" >
+
+  <label for="sobrenome">Sobrenome: </label>
+  <input id="sobrenome" type="text" >
+</p>
+
+<h1>
+  ng-for
+</h1>
+<h3>Nomes</h3>
+<p *ngFor="let nome of nomes">
+  {{ nome }}
+</p>
+
+<h3>Cidades / UF</h3>
+<p *ngFor="let cidade of cidades">
+  {{ cidade.nome }} / {{ cidade.sigla }} 
+</p>
+
+<p [ngSwitch]="tipoCampo">
+    <span *ngSwitchCase="botao">Botão</span>
+    <span *ngSwitchCase="checkbox">Checkbox</span>
+</p>

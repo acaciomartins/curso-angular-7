@@ -1,0 +1,53 @@
+
+1 - Criar pasta "angular7"
+
+mkdir angular7
+
+<b>Instalar Angular 7.3.9</b>
+
+npm install @angular/cli@7.3.9
+
+</b>1º Aula</b>
+
+<b>Criar projeto Angular</b>
+
+ng new exemplos-aula01
+
+
+<b>Criar componente</b>
+
+ng generate component components/addPessoa
+OU
+ng g c components/addPessoa
+
+Atividades:
+
+a) ng g c componente01
+
+b) ng g c string-interpolation
+
+c) ng g c property-binding
+
+Link do BootStrap
+-----------------
+https://getbootstrap.com/docs/4.3/getting-started/introduction/
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+d) ng g c ng-if
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
