@@ -1,5 +1,27 @@
 <app-componente01></app-componente01>
+<hr>
 <app-string-interpolation></app-string-interpolation>
-
+<hr>
 <app-property-binding></app-property-binding>
+<hr>
 <app-ng-if></app-ng-if>
+<hr>
+<app-ngcontent>
+    <h1 id="h1">Texto1</h1>
+    <h2 id="h2">Texto2</h2>
+</app-ngcontent>
+<hr>
+<app-ngtemplate></app-ngtemplate>
+<hr>
+<app-input-binding nome="João" idade="33"></app-input-binding>
+<hr>
+
+<!-- Usa para elucidar os ciclos de vida - inicio -->
+<app-ciclovida [valorInicial]="valor" *ngIf="!destruir"></app-ciclovida>
+<input type="text" [(ngModel)]="texto">
+{{texto}}
+<button class="btn btn-primary" (click)="mudarValor()">Mudar Valor</button>
+<button class="btn btn-primary" (click)="destruirCiclo()">Destruir Ciclo</button>
+<!-- Usa para elucidar os ciclos de vida - fim -->
+<hr>
+<app-exemplo-pipe></app-exemplo-pipe>

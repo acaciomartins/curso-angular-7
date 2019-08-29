@@ -1,0 +1,10 @@
+<h2>
+  ngtemplate works!
+</h2>
+<input type="checkbox" [(ngModel)] = "enabled">Enable / Disabled
+
+<h1 *ngIf="enabled else myTemplate">Texto de título</h1>
+
+<ng-template #myTemplate>
+  <h1>Texto dentro do template</h1>
+</ng-template>

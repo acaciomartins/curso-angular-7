@@ -35,16 +35,29 @@ https://getbootstrap.com/docs/4.3/getting-started/introduction/
 
 d) ng g c ng-if
 
+-----------
+| Aula 02 |
+-----------
+
+ng-content
+
+ng g c ngcontent
+
+ng g c ngtemplate
+
+ng g c input-binding
+
+ng g c input-binding/child
+
+ng g c ciclovida
 
 
+Tipos de Pipe
+
+https://angular.io/api?type=pipe
 
 
-
-
-
-
-
-
+ng g c exemploPipe
 
 
 

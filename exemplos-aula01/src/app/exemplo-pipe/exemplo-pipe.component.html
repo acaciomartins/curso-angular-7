@@ -1,0 +1,10 @@
+<h2>
+    exemplo-pipe works!
+</h2>
+<p>Título: {{livro.titulo | lowercase | capitalize}}</p>
+<p>Nota: {{livro.nota | number:'2.1-2'}}</p>
+<p>Número página: {{livro.numeroPaginas | number}}</p>
+<p>Preço: {{livro.preco | currency:'BRL'}}</p>
+<p>Data Lançamento: {{livro.dataLancamento | date:'dd/MM/yyyy'}}</p>
+
+<p>{{livro | json}}</p>
