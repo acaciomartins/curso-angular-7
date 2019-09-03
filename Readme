@@ -59,8 +59,33 @@ https://angular.io/api?type=pipe
 
 ng g c exemploPipe
 
+Criando um pipe
+---------------
+
+ng g p capitalize
 
 
+Rotas
+-----
+
+Gerando m?dulo de rotas
+-----------------------
+
+ng generate module app-routing --flat --module=app
+
+de: import { CommonModule } from '@angular/common';
+para: import { RouterModule, Routes } from '@angular/router';
 
 
+Formul?rios
+-----------
 
+Criar template form
+-------------------
+
+ng g c template-form
+
+Componente para debug de formul?rio
+-----------------------------------
+
+ng g c form-debug

@@ -14,6 +14,9 @@ import { ChildComponent } from './input-binding/child/child.component';
 import { CiclovidaComponent } from './ciclovida/ciclovida.component';
 import { ExemploPipeComponent } from './exemplo-pipe/exemplo-pipe.component';
 import { CapitalizePipe } from './capitalize.pipe';
+import { AppRoutingModule } from './app-routing.module';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { FormDebugComponent } from './form-debug/form-debug.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,14 @@ import { CapitalizePipe } from './capitalize.pipe';
     ChildComponent,
     CiclovidaComponent,
     ExemploPipeComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    TemplateFormComponent,
+    FormDebugComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

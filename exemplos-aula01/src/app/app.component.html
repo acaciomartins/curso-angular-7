@@ -18,10 +18,20 @@
 
 <!-- Usa para elucidar os ciclos de vida - inicio -->
 <app-ciclovida [valorInicial]="valor" *ngIf="!destruir"></app-ciclovida>
-<input type="text" [(ngModel)]="texto">
-{{texto}}
+<input type="text" [(ngModel)]="texto"> {{texto}}
 <button class="btn btn-primary" (click)="mudarValor()">Mudar Valor</button>
 <button class="btn btn-primary" (click)="destruirCiclo()">Destruir Ciclo</button>
 <!-- Usa para elucidar os ciclos de vida - fim -->
 <hr>
 <app-exemplo-pipe></app-exemplo-pipe>
+<hr>
+
+<div class="container">
+    <h2>Rotas</h2>
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" routerLink="templateForm">TemplateForm</a>
+        <a class="nav-item nav-link" routerLink="property">Property</a>
+    </nav>
+    <router-outlet></router-outlet>
+</div>
+<hr>

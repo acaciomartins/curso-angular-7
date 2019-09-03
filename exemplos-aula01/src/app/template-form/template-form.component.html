@@ -1,0 +1,64 @@
+<h2>
+    template-form works!
+</h2>
+<form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)">
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" class="form-control" id="nome" placeholder="Seu nome" ngModel #nome="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && nome.invalid}">
+        <div class="invalid-feedback" *ngIf="formulario.submitted && nome.invalid">
+            Por favor, informe um nome válido.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Seu e-mail" ngModel #email="ngModel" required email [ngClass]="{'is-invalid': email.touched && email.invalid}">
+        <div class="invalid-feedback" *ngIf="formulario.submitted && nome.invalid">
+            Por favor, informe um e-mail válido.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" class="form-control" id="cep" placeholder="Seu CEP" ngModel #cep="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && cep.invalid}">
+        <div class="invalid-feedback" *ngIf="formulario.submitted && cep.invalid">
+            Por favor, informe um CEP válido.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" class="form-control" id="endereco" placeholder="Seu Endereco" ngModel #endereco="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && endereco.invalid}">
+        <div class="invalid-feedback" *ngIf="formulario.submitted && endereco.invalid">
+            Por favor, informe um Endereço válido.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="numero">Número</label>
+        <input type="number" name="numero" class="form-control" id="numero" placeholder="Seu número" ngModel #numero="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && numero.invalid}">
+        <div class="invalid-feedback" *ngIf="formulario.submitted && numero.invalid">
+            Por favor, informe um número válido.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="complemento">Complemento</label>
+        <input type="text" name="complemento" class="form-control" id="complemento" placeholder="Seu complemento" ngModel #complemento="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && complemento.invalid}">
+        <div class="invalid-feedback" *ngIf="formulario.submitted && complemento.invalid">
+            Por favor, informe um complemento válido.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="bairro">Bairro</label>
+        <input type="text" name="bairro" class="form-control" id="bairro" placeholder="Seu bairro" ngModel #bairro="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && bairro.invalid}">
+        <div class="invalid-feedback" *ngIf="formulario.submitted && bairro.invalid">
+            Por favor, informe um bairro válido.
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" class="form-control" id="cidade" placeholder="Sua cidade" ngModel #cidade="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && cidade.invalid}">
+        <div class="invalid-feedback" *ngIf="formulario.submitted && cidade.invalid">
+            Por favor, informe uma cidade válida.
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="formulario.invalid">Enviar</button>
+    <app-form-debug [form]="formulario"></app-form-debug>
+</form>
