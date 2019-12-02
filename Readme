@@ -89,3 +89,44 @@ Componente para debug de formul?rio
 -----------------------------------
 
 ng g c form-debug
+
+
+-----------------------------------------------------------
+
+
+BackEnd fake usando Json-server
+-------------------------------
+
+Install JSON Server
+
+npm install -g json-server
+
+Start JSON Server
+
+json-server --watch db.json
+
+Rest usando ViaCEP
+------------------
+
+https://viacep.com.br/
+
+------
+
+criar componente para exbir
+
+ng g c listar-usuarios
+
+
+
+<thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">CEP</th>
+            <th scope="col">Endere?o</th>
+            <th scope="col">N?mero</th>
+            <th scope="col">Complemento</th>
+            <th scope="col">Bairro</th>
+            <th scope="col">Cidade</th>
+        </tr>
+    </thead>

@@ -17,6 +17,8 @@ import { CapitalizePipe } from './capitalize.pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { FormDebugComponent } from './form-debug/form-debug.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListarUsuariosComponent } from './listar-usuarios/listar-usuarios.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +35,14 @@ import { FormDebugComponent } from './form-debug/form-debug.component';
     ExemploPipeComponent,
     CapitalizePipe,
     TemplateFormComponent,
-    FormDebugComponent
+    FormDebugComponent,
+    ListarUsuariosComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,37 @@
+{
+  "usuarios": [
+    {
+      "nome": "ACACIO A MARTINS",
+      "email": "acacio.am@gmail.com",
+      "cep": "02133-000",
+      "endereco": "Avenida Belisário Pena",
+      "numero": 1,
+      "complemento": "a",
+      "bairro": "Vila Maria Alta",
+      "cidade": "São Paulo",
+      "id": 1
+    },
+    {
+      "nome": "teste",
+      "email": "acacio.am@gmail.com",
+      "cep": "02133-000",
+      "endereco": "Avenida Belisário Pena",
+      "numero": 2,
+      "complemento": "a",
+      "bairro": "Vila Maria Alta",
+      "cidade": "São Paulo",
+      "id": 2
+    },
+    {
+      "nome": "jj",
+      "email": "acacio.am@gmail.com",
+      "cep": "02133-000",
+      "endereco": "Avenida Belisário Pena",
+      "numero": 2,
+      "complemento": "2",
+      "bairro": "Vila Maria Alta",
+      "cidade": "São Paulo",
+      "id": 3
+    }
+  ]
+}

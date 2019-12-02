@@ -18,7 +18,7 @@
     </div>
     <div class="form-group">
         <label for="cep">CEP</label>
-        <input type="text" name="cep" class="form-control" id="cep" placeholder="Seu CEP" ngModel #cep="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && cep.invalid}">
+        <input type="text" name="cep" (blur)="consultaCEP($event.target.value, formulario)" class="form-control" id="cep" placeholder="Seu CEP" ngModel #cep="ngModel" required [ngClass]="{'is-invalid': formulario.submitted && cep.invalid}">
         <div class="invalid-feedback" *ngIf="formulario.submitted && cep.invalid">
             Por favor, informe um CEP válido.
         </div>

@@ -1,0 +1,35 @@
+<h1>
+    listar-usuarios works!
+</h1>
+
+<div class="table-responsive-xl">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">CEP</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Número</th>
+                <th scope="col">Complemento</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of listaUsuarios">
+                <td>{{usuario.id }}</td>
+                <td>{{usuario.nome }}</td>
+                <td>{{usuario.email}}</td>
+                <td>{{usuario.cep}}</td>
+                <td>{{usuario.endereco}}</td>
+                <td>{{usuario.numero}}</td>
+                <td>{{usuario.complemento}}</td>
+                <td>{{usuario.bairro}}</td>
+                <td>{{usuario.cidade}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
